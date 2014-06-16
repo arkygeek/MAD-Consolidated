@@ -23,4 +23,21 @@
 #ifndef MAD_H
 #define MAD_H
 
+#include <QMap>
+#include <QPair>
+#include <QString>
+//#include <madfoodsource.h>
+
+typedef QMap <QString,QPair<bool,QString> > MadTripleMap;
+
+typedef QPair <QPair<QString,QString>, QPair<QString,QString> > MadDoublePair;
+//typedef QMap < QString, MadFoodSource > MadFoodSourceMap;
+typedef QMap <QString,QPair<QString,float> > MadReportMap;
+
+enum Priority {None, High, Medium, Low};
+enum LandBeingGrazed {Common, Unique};
+enum AreaUnits {Acre, Dunum, Hectare};
+
+
+
 #endif // MAD_H
