@@ -76,11 +76,11 @@
         <file>icons/datasets/folder-pencil.png</file>
         <file>icons/datasets/folder-box.png</file>
         <file>icons/datasets/folder-open.png</file>
-        <file>icons/datasets/exceptions.png</file>
-        <file>icons/datasets/platinum.png</file>
-        <file>icons/datasets/gold.png</file>
-        <file>icons/datasets/silver.png</file>
-        <file>icons/datasets/copper.png</file>
+        <file>exceptions.png</file>
+        <file>platinum.png</file>
+        <file>gold.png</file>
+        <file>silver.png</file>
+        <file>copper.png</file>
         <file>icons/datasets/register.png</file>
     </qresource>
     <qresource prefix="/images">
@@ -88,5 +88,12 @@
         <file>images/ORANI_ProdnNesta.png</file>
         <file>images/ORANI_DataStructure.png</file>
         <file>images/MAGPIE.png</file>
+    </qresource>
+    <qresource prefix="/Resources">
+        <file>copper.png</file>
+        <file>exceptions.png</file>
+        <file>gold.png</file>
+        <file>platinum.png</file>
+        <file>silver.png</file>
     </qresource>
 </RCC>

@@ -1,5 +1,7 @@
 #include "datasetrankformmodel.h"
+#include <QtGui>
 
-DatasetRankFormModel::DatasetRankFormModel()
+DatasetRankFormModel::DatasetRankFormModel(QObject *parent) : EnginioModel(parent)
+//DatasetRankFormModel::DatasetRankFormModel()
 {
 }

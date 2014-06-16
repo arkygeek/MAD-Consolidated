@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui enginio
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 qtHaveModule(printsupport): QT += printsupport
@@ -17,13 +17,15 @@ SOURCES += main.cpp\
         madmainform.cpp \
     madguid.cpp \
     maddatasetoverview.cpp \
-    rankpointgenerator.cpp
+    rankpointgenerator.cpp \
+    datasetrankformmodel.cpp
 
 HEADERS  += madmainform.h \
     madguid.h \
     maddatasetoverview.h \
     mad.h \
-    rankpointgenerator.h
+    rankpointgenerator.h \
+    datasetrankformmodel.h
 
 FORMS    += madmainformbase.ui
 
