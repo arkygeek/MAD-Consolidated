@@ -26,7 +26,11 @@ SOURCES += main.cpp\
     maddatasetparameter.cpp \
     madmodelparameter.cpp \
     maddatasetmanagement.cpp \
-    maddatasetphenology.cpp
+    maddatasetphenology.cpp \
+    maddatasetprevcrop.cpp \
+    maddatasetinitialvalues.cpp \
+    maddatasetsoil.cpp \
+    maddatasetsite.cpp
 
 HEADERS  += madmainform.h \
     madguid.h \
@@ -41,7 +45,11 @@ HEADERS  += madmainform.h \
     maddatasetparameter.h \
     madmodelparameter.h \
     maddatasetmanagement.h \
-    maddatasetphenology.h
+    maddatasetphenology.h \
+    maddatasetprevcrop.h \
+    maddatasetinitialvalues.h \
+    maddatasetsoil.h \
+    maddatasetsite.h
 
 FORMS    += madmainformbase.ui
 

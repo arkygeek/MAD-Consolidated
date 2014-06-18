@@ -19,9 +19,95 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-
 #include "maddatasetphenology.h"
 
 MadDatasetPhenology::MadDatasetPhenology()
 {
+}
+
+MadDatasetPhenology::~MadDatasetPhenology()
+{
+}
+
+
+// accessors
+
+QString MadDatasetPhenology::notes() const
+{
+  return mNotes;
+}
+
+bool MadDatasetPhenology::emergenceState() const
+{
+  return mEmergenceState;
+}
+
+// mutators
+
+void MadDatasetPhenology::setNotes(QString theNotes)
+{
+  mNotes = theNotes;
+}
+
+void MadDatasetPhenology::setEmergenceState(bool theEmergenceState)
+{
+  mEmergenceState = theEmergenceState;
+}
+void MadDatasetPhenology::setStemElongationState(bool theStemElongationState)
+{
+  mStemElongationState = theStemElongationState;
+}
+void MadDatasetPhenology::setEarEmergenceState(bool theEarEmergenceState)
+{
+  mEarEmergenceState = theEarEmergenceState;
+}
+void MadDatasetPhenology::setFloweringState(bool theFloweringState)
+{
+  mFloweringState = theFloweringState;
+}
+void MadDatasetPhenology::setYellowRipenessState(bool theYellowRipenessState)
+{
+  mYellowRipenessState = theYellowRipenessState;
+}
+
+void MadDatasetPhenology::setEmergenceObservations(int theEmergenceObservations)
+{
+  mEmergenceObservations = theEmergenceObservations;
+}
+void MadDatasetPhenology::setStemElongationObservations(int theStemElongationObservations)
+{
+  mStemElongationObservations = theStemElongationObservations;
+}
+void MadDatasetPhenology::setEarEmergenceObservations(int theEarEmergenceObservations)
+{
+  mEarEmergenceObservations = theEarEmergenceObservations;
+}
+void MadDatasetPhenology::setFloweringObservations(int theFloweringObservations)
+{
+  mFloweringObservations = theFloweringObservations;
+}
+void MadDatasetPhenology::setYellowRipenessObservations(int theYellowRipenessObservations)
+{
+  mYellowRipenessObservations = theYellowRipenessObservations;
+}
+
+void MadDatasetPhenology::setEmergenceWeight(double theEmergenceWeight)
+{
+  mEmergenceWeight = theEmergenceWeight;
+}
+void MadDatasetPhenology::setStemElongationWeight(double theStemElongationWeight)
+{
+  mStemElongationWeight = theStemElongationWeight;
+}
+void MadDatasetPhenology::setEarEmergenceWeight(double theEarEmergenceWeight)
+{
+  mEarEmergenceWeight = theEarEmergenceWeight;
+}
+void MadDatasetPhenology::setFloweringWeight(double theFloweringWeight)
+{
+  mFloweringWeight = theFloweringWeight;
+}
+void MadDatasetPhenology::setYellowRipenessWeight(double theYellowRipenessWeight)
+{
+  mYellowRipenessWeight = theYellowRipenessWeight;
 }
