@@ -25,3 +25,127 @@
 MadDatasetSite::MadDatasetSite()
 {
 }
+
+MadDatasetSite::~MadDatasetSite()
+{
+}
+
+// accessors
+
+QString MadDatasetSite::notes() const
+{
+  return mNotes;
+}
+
+bool MadDatasetSite::latitudeState() const
+{
+  return mLatitudeState;
+}
+bool MadDatasetSite::longitudeState() const
+{
+  return mLongitudeState;
+}
+//
+bool MadDatasetSite::altitudeState() const
+{
+  return mAltitudeState;
+}
+bool MadDatasetSite::slopeExpositionState() const
+{
+  return mSlopeExpositionState;
+}
+
+int MadDatasetSite::latitudeObservations() const
+{
+  return mLatitudeObservations;
+}
+int MadDatasetSite::longitudeObservations() const
+{
+  return mLongitudeObservations;
+}
+//
+int MadDatasetSite::altitudeObservations() const
+{
+  return mAltitudeObservations;
+}
+int MadDatasetSite::slopeExpositionObservations() const
+{
+  return mSlopeExpositionObservations;
+}
+
+double MadDatasetSite::latitudeWeight() const
+{
+  return mLatitudeWeight;
+}
+double MadDatasetSite::longitudeWeight() const
+{
+  return mLongitudeWeight;
+}
+//
+double MadDatasetSite::altitudeWeight() const
+{
+  return mAltitudeWeight;
+}
+double MadDatasetSite::slopeExpositionWeight() const
+{
+  return mSlopeExpositionWeight;
+}
+
+
+// mutators
+
+void MadDatasetSite::setNotes(QString theNotes)
+{
+  mNotes = theNotes;
+}
+
+void MadDatasetSite::setLatitudeState (bool theLatitudeState)
+{
+  mLatitudeState = theLatitudeState;
+}
+void MadDatasetSite::setLongitudeState (bool theLongitudeState)
+{
+  mLongitudeState = theLongitudeState;
+}
+void MadDatasetSite::setAltitudeState (bool theAltitudeState)
+{
+  mAltitudeState = theAltitudeState;
+}
+void MadDatasetSite::setSlopeExpositionState (bool theSlopeExpositionState)
+{
+  mSlopeExpositionState = theSlopeExpositionState;
+}
+
+void MadDatasetSite::setLatitudeObservations (int theLatitudeObservations)
+{
+  mLatitudeObservations = theLatitudeObservations;
+}
+void MadDatasetSite::setLongitudeObservations (int theLongitudeObservations)
+{
+  mLongitudeObservations = theLongitudeObservations;
+}
+void MadDatasetSite::setAltitudeObservations (int theAltitudeObservations)
+{
+  mAltitudeObservations = theAltitudeObservations;
+}
+void MadDatasetSite::setSlopeExpositionObservations (int theSlopeExpositionObservations)
+{
+  mSlopeExpositionObservations = theSlopeExpositionObservations;
+}
+
+void MadDatasetSite::setLatitudeWeight (double theLatitudeWeight)
+{
+  mLatitudeWeight = theLatitudeWeight;
+}
+void MadDatasetSite::setLongitudeWeight (double theLongitudeWeight)
+{
+  mLongitudeWeight = theLongitudeWeight;
+}
+void MadDatasetSite::setAltitudeWeight (double theAltitudeWeight)
+{
+  mAltitudeWeight = theAltitudeWeight;
+}
+void MadDatasetSite::setSlopeExpositionWeight (double theSlopeExpositionWeight)
+{
+  mSlopeExpositionWeight = theSlopeExpositionWeight;
+}
