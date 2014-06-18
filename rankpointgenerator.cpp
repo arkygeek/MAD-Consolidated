@@ -572,7 +572,7 @@ QString RankPointGenerator::getRankPrevCrop(int theTotal)
   QString myRank;
 
   if (theTotal >= 17) myRankNumber=17;
-  else if (theTotal >= 19) myRankNumber=19;
+  else if (theTotal >= 15) myRankNumber=15;
   else if (theTotal >= 12) myRankNumber=12;
   else if (theTotal >= 9) myRankNumber=9;
 
@@ -581,7 +581,7 @@ QString RankPointGenerator::getRankPrevCrop(int theTotal)
      case 17: myRank = "Platinum";
               break;
 
-     case 19: myRank = "Gold";
+     case 15: myRank = "Gold";
               break;
 
      case 12: myRank = "Silver";

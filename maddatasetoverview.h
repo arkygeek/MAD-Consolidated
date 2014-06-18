@@ -29,7 +29,7 @@
 #include "mad.h"
 
 /**
- * This class represents all of the required data for setting labels in the diet tab.
+ * This class represents all of the required data for setting labels in the overview tab.
  * @author Jason Jorgenson
  */
 

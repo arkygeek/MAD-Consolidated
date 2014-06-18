@@ -18,14 +18,30 @@ SOURCES += main.cpp\
     madguid.cpp \
     maddatasetoverview.cpp \
     rankpointgenerator.cpp \
-    datasetrankformmodel.cpp
+    datasetrankformmodel.cpp \
+    madutils.cpp \
+    maddataset.cpp \
+    madmodel.cpp \
+    madscenario.cpp \
+    maddatasetparameter.cpp \
+    madmodelparameter.cpp \
+    maddatasetmanagement.cpp \
+    maddatasetphenology.cpp
 
 HEADERS  += madmainform.h \
     madguid.h \
     maddatasetoverview.h \
     mad.h \
     rankpointgenerator.h \
-    datasetrankformmodel.h
+    datasetrankformmodel.h \
+    madutils.h \
+    maddataset.h \
+    madmodel.h \
+    madscenario.h \
+    maddatasetparameter.h \
+    madmodelparameter.h \
+    maddatasetmanagement.h \
+    maddatasetphenology.h
 
 FORMS    += madmainformbase.ui
 
