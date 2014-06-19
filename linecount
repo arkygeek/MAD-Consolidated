@@ -1,0 +1,2 @@
+#!/bin/sh
+find . -name "*build*" -prune -o -name "*.cpp" | xargs wc -l
