@@ -96,4 +96,8 @@
         <file>platinum.png</file>
         <file>silver.png</file>
     </qresource>
+    <qresource prefix="/datasetformfiles">
+        <file>muncheberg.txt</file>
+        <file>blankDataRanking.txt</file>
+    </qresource>
 </RCC>

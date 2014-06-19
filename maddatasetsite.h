@@ -106,8 +106,6 @@ public:
     double mAltitudeWeight;
     double mSlopeExpositionWeight;
 
-
-
 };
 
 #endif // MADDATASETSITE_H

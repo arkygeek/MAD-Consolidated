@@ -1,0 +1,646 @@
+{
+    "Dataset": {
+        "cbDatasetGridUnits": "degrees",
+        "cbDatasetSpatialScaleClimateProjection": "spatial scale",
+        "cbDatasetSpatialScaleCropGenetic": "spatial scale",
+        "cbDatasetSpatialScaleCropMgmt": "Field",
+        "cbDatasetSpatialScaleCropPathogens": "spatial scale",
+        "cbDatasetSpatialScaleCropPhysiology": "Whole Plant",
+        "cbDatasetSpatialScaleEconomic": "spatial scale",
+        "cbDatasetSpatialScaleGeneric": "spatial scale",
+        "cbDatasetSpatialScaleLivestockGenetic": "spatial scale",
+        "cbDatasetSpatialScaleLivestockMgmt": "spatial scale",
+        "cbDatasetSpatialScaleLivestockPathogens": "spatial scale",
+        "cbDatasetSpatialScaleLivestockPhysiology": "spatial scale",
+        "cbDatasetSpatialScaleSoils": "spatial scale",
+        "cbDatasetSpatialScaleWeather": "spatial scale",
+        "cbDatasetSpatialScaleWeatherGenerator": "spatial scale",
+        "cbDatasetTemporalScale": "Days",
+        "chbxDatasetDataTypesClimateProjection": false,
+        "chbxDatasetDataTypesCropFieldExperiments": true,
+        "chbxDatasetDataTypesCropGenetic": false,
+        "chbxDatasetDataTypesCropMgmt": true,
+        "chbxDatasetDataTypesCropPathogens": false,
+        "chbxDatasetDataTypesCropPhysiology": true,
+        "chbxDatasetDataTypesEconomic": false,
+        "chbxDatasetDataTypesGeneric": false,
+        "chbxDatasetDataTypesGrid": false,
+        "chbxDatasetDataTypesLivestockGenetic": false,
+        "chbxDatasetDataTypesLivestockMgmt": false,
+        "chbxDatasetDataTypesLivestockPathogens": false,
+        "chbxDatasetDataTypesLivestockPhysiology": false,
+        "chbxDatasetDataTypesSoils": false,
+        "chbxDatasetDataTypesWeather": false,
+        "chbxDatasetDataTypesWeatherGenerator": false,
+        "chbxDatasetPeriodOfRecord": true,
+        "dateEditFrom": "01.01.1992",
+        "dateEditTo": "31.12.1998",
+        "dteDatasetSubmitted": "17.06.2014 17:12",
+        "gbDatasetDataTypesCrop": true,
+        "gbDatasetDataTypesLivestock": false,
+        "ledDatasetDatasetName": "Müncheberg crop rotation",
+        "ledDatasetEmail": "chris.kollas@zalf.de",
+        "ledDatasetGridResolutionX": "",
+        "ledDatasetGridResolutionY": "",
+        "ledDatasetSubmitter": "C. Kollas, KC Kersebaum, W. Mirschel",
+        "ledDatasetUsageRestrictions": "",
+        "ledDatasetVersion": "1.0",
+        "ledDatasetWebLink": "http://link.springer.com/chapter/10.1007/978-1-4020-4479-3_16",
+        "listWidgetVariables": "",
+        "tedDatasetComments": "Description of dataset in:\nKersebaum, Kurt Christian, et al. \"Modelling water and nutrient dynamics in soil–crop systems: a comparison of simulation models applied on common data sets.\" Modelling water and nutrient dynamics in soil–crop systems. Springer Netherlands, 2007. 1-17.\n\nDOI 10.1007/978-1-4020-4479-3_16\n",
+        "tedDatasetCoverage": "Müncheberg area, Brandenburg state, Germany",
+        "tedDatasetCropNotes": "",
+        "tedDatasetLivestockNotes": "",
+        "tedDatasetResolution": ""
+    },
+    "Header": {
+        "cbDatasets": "Select Dataset",
+        "cbUser": "If not listed, select Register",
+        "dteDatasetSubmitted": "Mi Jun 18 09:58:02 2014",
+        "lblOverallRank": "Gold",
+        "lblTotalPostMultiplier": "176",
+        "lblTotalPreMultiplier": "162"
+    },
+    "InitialValues": {
+        "NMin": {
+            "chbxNMinInitialValues": false,
+            "dsbNMinDepthInitialValues": 0.90000000000000002,
+            "dsbNMinWeightInitialValues": 4,
+            "lblNMinPtsInitialValues": 4.3200000000000003,
+            "sbNMinObsInitialValues": 3
+        },
+        "SoilMoisture": {
+            "chbxSoilMoistureInitialValues": true,
+            "dsbSoilMoistureDepthInitialValues": 0.90000000000000002,
+            "dsbSoilMoistureWeightInitialValues": 4,
+            "lblSoilMoisturePtsInitialValues": 4.3200000000000003,
+            "sbSoilMoistureObsInitialValues": 3
+        },
+        "lblOverallPtsInitialValues": 8.6400000000000006,
+        "lblRankingInitialValues": "Gold",
+        "txbrInitialValues": ""
+    },
+    "Management": {
+        "Fertilisation": {
+            "chbxFertilisationMgmt": true,
+            "dsbFertilisationWeightMgmt": 5,
+            "lblFertilisationPtsMgmt": 5,
+            "sbFertilisationObsMgmt": 1
+        },
+        "Harvest": {
+            "chbxHarvestMgmt": true,
+            "dsbHarvestWeightMgmt": 5,
+            "lblHarvestPtsMgmt": 5,
+            "sbHarvestObsMgmt": 1
+        },
+        "Irrigation": {
+            "chbxIrrigationMgmt": true,
+            "dsbIrrigationWeightMgmt": 5,
+            "lblIrrigationPtsMgmt": 5,
+            "sbIrrigationObsMgmt": 1
+        },
+        "SeedDensity": {
+            "chbxSeedDensityMgmt": false,
+            "dsbSeedDensityWeightMgmt": 3,
+            "lblSeedDensityPtsMgmt": 3,
+            "sbSeedDensityObsMgmt": 1
+        },
+        "Sowing": {
+            "chbxSowingMgmt": true,
+            "dsbSowingWeightMgmt": 5,
+            "lblSowingPtsMgmt": 5,
+            "sbSowingObsMgmt": 1
+        },
+        "Tillage": {
+            "chbxTillageMgmt": false,
+            "dsbTillageWeightMgmt": 2,
+            "lblTillagePtsMgmt": 2,
+            "sbTillageObsMgmt": 1
+        },
+        "Variety": {
+            "chbxVarietyMgmt": false,
+            "dsbVarietyWeightMgmt": 3,
+            "lblVarietyPtsMgmt": 3,
+            "sbVarietyObsMgmt": 1
+        },
+        "lblOverallPtsMgmt": 28,
+        "lblRankingMgmt": "Platinum",
+        "txbrMgmt": "Seed density is not given for each crop"
+    },
+    "Phenology": {
+        "EarEmergence": {
+            "chbxEarEmergencePhenology": false,
+            "dsbEarEmergenceWeightPhenology": 2,
+            "lblEarEmergencePtsPhenology": 0,
+            "sbEarEmergenceObsPhenology": 0
+        },
+        "Emergence": {
+            "chbxEmergencePhenology": false,
+            "dsbEmergenceWeightPhenology": 3,
+            "lblEmergencePtsPhenology": 3,
+            "sbEmergenceObsPhenology": 1
+        },
+        "Flowering": {
+            "chbxFloweringPhenology": true,
+            "dsbFloweringWeightPhenology": 5,
+            "lblFloweringPtsPhenology": 5,
+            "sbFloweringObsPhenology": 1
+        },
+        "StemElongation": {
+            "chbxStemElongationPhenology": false,
+            "dsbStemElongationWeightPhenology": 2,
+            "lblStemElongationPtsPhenology": 0,
+            "sbStemElongationObsPhenology": 0
+        },
+        "YellowRipeness": {
+            "chbxYellowRipenessPhenology": false,
+            "dsbYellowRipenessWeightPhenology": 3,
+            "lblYellowRipenessPtsPhenology": 3,
+            "sbYellowRipenessObsPhenology": 1
+        },
+        "lblOverallPtsPhenology": 11,
+        "lblRankingPhenology": "Gold",
+        "txbrPhenology": "Description/instructions go here"
+    },
+    "PrevCrop": {
+        "Crop": {
+            "chbxCropPrevCrop": false,
+            "dsbCropWeightPrevCrop": 3,
+            "lblCropPtsPrevCrop": 3,
+            "sbCropObsPrevCrop": 1
+        },
+        "Fertilisation": {
+            "chbxFertilisationPrevCrop": false,
+            "dsbFertilisationWeightPrevCrop": 3,
+            "lblFertilisationPtsPrevCrop": 0,
+            "sbFertilisationObsPrevCrop": 0
+        },
+        "HarvestDate": {
+            "chbxHarvestMgmtDatePrevCrop": false,
+            "dsbHarvestDateWeightPrevCrop": 3,
+            "lblHarvestDatePtsPrevCrop": 0,
+            "sbHarvestDateObsPrevCrop": 0
+        },
+        "Irrigation": {
+            "chbxIrrigationPrevCrop": false,
+            "dsbIrrigationWeightPrevCrop": 2,
+            "lblIrrigationPtsPrevCrop": 0,
+            "sbIrrigationObsPrevCrop": 0
+        },
+        "ResidueMgmt": {
+            "chbxResidueMgmtPrevCrop": false,
+            "dsbResidueMgmtWeightPrevCrop": 4,
+            "lblResidueMgmtPtsPrevCrop": 4,
+            "sbResidueMgmtObsPrevCrop": 1
+        },
+        "SowingDate": {
+            "chbxSowingMgmtDatePrevCrop": false,
+            "dsbSowingDateWeightPrevCrop": 2,
+            "lblSowingDatePtsPrevCrop": 0,
+            "sbSowingDateObsPrevCrop": 0
+        },
+        "Yield": {
+            "chbxYieldPrevCrop": false,
+            "dsbYieldWeightPrevCrop": 2,
+            "lblYieldPtsPrevCrop": 0,
+            "sbYieldObsPrevCrop": 0
+        },
+        "lblOverallPtsPrevCrop": 7,
+        "lblRankingPrevCrop": "na",
+        "txbrPrevCrop": "Description/instructions go here"
+    },
+    "Seasons": {
+        "MgmtPotential": {
+            "dsbSeasonsMgmtPotentialWeight": 1,
+            "lblSeasonsMgmtPotentialPts": 5,
+            "sbSeasonsMgmtPotentialNumber": 5
+        },
+        "SeasonsPerCrop": {
+            "dsbSeasonsSeasonsPerCropWeight": 1,
+            "lblSeasonsSeasonsPerCropPts": 2,
+            "sbSeasonsSeasonsPerCropNumber": 2
+        },
+        "SiteVariants": {
+            "dsbSeasonsSiteVariantsWeight": 1,
+            "lblSeasonsSiteVariantsPts": 4,
+            "sbSeasonsSiteVariantsNumber": 4
+        },
+        "Treatment1": {
+            "cbSeasonsTreatment1": "Irrigation",
+            "chbxSeasonsTreatment1": true,
+            "dsbSeasonsTreatment1Weight": 1,
+            "ledSeasonsTreatment1": "",
+            "sbSeasonsTreatment1Number": 2
+        },
+        "Treatment2": {
+            "cbSeasonsTreatment2": "Nitrogen Amount",
+            "chbxSeasonsTreatment2": false,
+            "dsbSeasonsTreatment2Weight": 1,
+            "ledSeasonsTreatment2": "",
+            "sbSeasonsTreatment2Number": 0
+        },
+        "Treatment3": {
+            "cbSeasonsTreatment3": "Organic N",
+            "chbxSeedDensityMgmt": false,
+            "dsbSeasonsTreatment3Weight": 1,
+            "ledSeasonsTreatment3": "",
+            "sbSeasonsTreatment3Number": 0
+        },
+        "Treatment4": {
+            "cbSeasonsTreatment4": "Mineral N",
+            "chbxSeedDensityMgmt": false,
+            "dsbSeasonsTreatment4Weight": 1,
+            "ledSeasonsTreatment4": "",
+            "sbSeasonsTreatment4Number": 0
+        },
+        "Treatment5": {
+            "cbSeasonsTreatment5": "CO2",
+            "chbxSeedDensityMgmt": false,
+            "dsbSeasonsTreatment5Weight": 1,
+            "ledSeasonsTreatment5": "",
+            "sbSeasonsTreatment5Number": 0
+        },
+        "Treatment6": {
+            "cbSeasonsTreatment6": "Cuttings",
+            "chbxSeedDensityMgmt": false,
+            "dsbSeasonsTreatment6Weight": 1,
+            "ledSeasonsTreatment6": "",
+            "sbSeasonsTreatment6Number": 0
+        },
+        "ZeroNTreatments": {
+            "cbSeasonsZeroNTreatment": "No",
+            "dsbSeasonsZeroNTreatment": 3,
+            "lblSeasonsZeroNTreatmentPts": 0
+        },
+        "lblSeasonsMultiplierValue": "1.08571",
+        "lblSeasonsPointsValue": 13,
+        "tedSeasons": "Here, site variants were shifted rotations: 1 defined rotation was grown 4times, each shifted by one year\n"
+    },
+    "Site": {
+        "Altitude": {
+            "chbxAltitudeSite": true,
+            "dsbAltitudeWeightSite": 3,
+            "lblAltitudePtsSite": 3,
+            "sbAltitudeObsSite": 1
+        },
+        "Latitude": {
+            "chbxLatitudeSite": true,
+            "dsbLatitudeWeightSite": 5,
+            "lblLatitudePtsSite": 5,
+            "sbLatitudeObsSite": 1
+        },
+        "Longitude": {
+            "chbxLongitudeSite": false,
+            "dsbLongitudeWeightSite": 3,
+            "lblLongitudePtsSite": 3,
+            "sbLongitudeObsSite": 1
+        },
+        "Slope": {
+            "chbxSlopeSite": true,
+            "lblSlopePtsSite": 1,
+            "sbSlopeObsSite": 1,
+            "sbSlopeWeightSite": 1
+        },
+        "lblOverallPtsSite": 12,
+        "lblRankingSite": "Platinum",
+        "txbrSite": ""
+    },
+    "Soil": {
+        "BulkDensity": {
+            "chbxBulkDensitySoil": false,
+            "dsbBulkDensityDepthSoil": 1.3000000000000003,
+            "dsbBulkDensityWeightSoil": 3,
+            "lblBulkDensityPtsSoil": 2.6000000000000001,
+            "sbBulkDensityLayersSoil": 3
+        },
+        "COrg": {
+            "chbxCOrgSoil": true,
+            "dsbCOrgDepthSoil": 0.90000000000000002,
+            "dsbCOrgWeightSoil": 3,
+            "lblCOrgPtsSoil": 4.5,
+            "sbCOrgLayersSoil": 2
+        },
+        "FieldCapacity": {
+            "chbxFieldCapacitySoil": false,
+            "dsbFieldCapacityDepthSoil": 2.2000000000000011,
+            "dsbFieldCapacityWeightSoil": 3,
+            "lblFieldCapacityPtsSoil": 4.5,
+            "sbFieldCapacityLayersSoil": 6
+        },
+        "HydrCondCurve": {
+            "chbxHydrCondCurveSoil": false,
+            "dsbHydrCondCurveDepthSoil": 0,
+            "dsbHydrCondCurveWeightSoil": 3,
+            "lblHydrCondCurvePtsSoil": 0,
+            "sbHydrCondCurveLayersSoil": 0
+        },
+        "InputPfCurve": {
+            "chbxPfCurveSoil": false,
+            "dsbPfCurveDepthSoil": 0,
+            "dsbPfCurveWeightSoil": 3,
+            "lblPfCurvePtsSoil": 0,
+            "sbPfCurveLayersSoil": 0
+        },
+        "NOrg": {
+            "chbxNOrgSoil": false,
+            "dsbNOrgDepthSoil": 0.90000000000000002,
+            "dsbNOrgWeightSoil": 3,
+            "lblNOrgPtsSoil": 4.5,
+            "sbNOrgLayersSoil": 2
+        },
+        "Texture": {
+            "chbxTextureSoil": true,
+            "dsbTextureDepthSoil": 2.2000000000000002,
+            "dsbTextureWeightSoil": 5,
+            "lblTexturePtsSoil": 7.5,
+            "sbTextureLayersSoil": 6
+        },
+        "WiltingPoint": {
+            "chbxWiltingPointSoil": false,
+            "dsbWiltingPointDepthSoil": 2.2000000000000011,
+            "dsbWiltingPointWeightSoil": 3,
+            "lblWiltingPointPtsSoil": 4.5,
+            "sbWiltingPointLayersSoil": 6
+        },
+        "lblOverallPtsSoil": 31.100000000000001,
+        "lblRankingSoil": "Platinum",
+        "pH": {
+            "chbxPhSoil": false,
+            "dsbPhDepthSoil": 0.90000000000000002,
+            "dsbPhWeightSoil": 2,
+            "lblPhPtsSoil": 3,
+            "sbPhLayersSoil": 2
+        },
+        "txbrSoil": "soil type: Eutric cambiosol\nGroundwater table below 12 m (under ground)\nmax rooting depth: 70 cm\ntotal pore space given\nsoil profile measured in autumn 1993"
+    },
+    "StateVariables": {
+        "Crop": {
+            "AGrBiomass": {
+                "chbxSVCropAGrBiomass": false,
+                "dsbSVCropAGrBiomassReplicates": 3,
+                "dsbSVCropAGrBiomassWeighting": 4,
+                "lblSVCropAGrBiomassPoints": 5,
+                "sbSVCropAGrBiomassObservations": 7
+            },
+            "LAI": {
+                "chbxSVCropLAI": false,
+                "dsbSVCropLAIReplicates": 3,
+                "dsbSVCropLAIWeighting": 4,
+                "lblSVCropLAIPoints": 0,
+                "sbSVCropLAIObservations": 0
+            },
+            "NInAGrBiomass": {
+                "chbxSVCropNInAGrBiomass": false,
+                "dsbSVCropNInAGrBiomassReplicates": 3,
+                "dsbSVCropNInAGrBiomassWeighting": 3,
+                "lblSVCropNInAGrBiomassPoints": 3.6000000000000001,
+                "sbSVCropNInAGrBiomassObservations": 7
+            },
+            "NInOrgans": {
+                "chbxSVCropNInOrgans": false,
+                "dsbSVCropNInOrgansLayers": 2,
+                "dsbSVCropNInOrgansReplicates": 3,
+                "dsbSVCropNInOrgansWeighting": 3,
+                "lblSVCropNInOrgansPoints": 3.6000000000000001,
+                "sbSVCropNInOrgansObservations": 6
+            },
+            "RootBiomass": {
+                "chbxSVCropRootBiomass": false,
+                "dsbSVCropRootBiomassLayers": 1,
+                "dsbSVCropRootBiomassReplicates": 3,
+                "dsbSVCropRootBiomassWeighting": 3,
+                "lblSVCropRootBiomassPoints": 1.2,
+                "sbSVCropRootBiomassObservations": 6
+            },
+            "WeightOrgans": {
+                "chbxSVCropWeightOrgans": false,
+                "dsbSVCropWeightOrgansLayers": 5,
+                "dsbSVCropWeightOrgansReplicates": 3,
+                "dsbSVCropWeightOrgansWeighting": 3,
+                "lblSVCropWeightOrgansPoints": 4.5,
+                "sbSVCropWeightOrgansObservations": 7
+            },
+            "Yield": {
+                "chbxSVCropYield": true,
+                "dsbSVCropYieldReplicates": 3,
+                "dsbSVCropYieldWeighting": 5,
+                "lblSVCropYieldPoints": 6,
+                "sbSVCropYieldObservations": 1
+            },
+            "lblOverallPtsSVCrop": 23.899999999999999
+        },
+        "Observations": {
+            "Damages": {
+                "chbxSVObservationsDamages": false,
+                "dsbSVObservationsDamagesWeighting": 3,
+                "lblSVObservationsDamagesPoints": 0,
+                "sbSVObservationsDamagesObservations": 0
+            },
+            "Lodging": {
+                "chbxSVObservationsLodging": false,
+                "dsbSVObservationsLodgingWeighting": 3,
+                "lblSVObservationsLodgingPoints": 0,
+                "sbSVObservationsLodgingObservations": 0
+            },
+            "PestsOrDiseases": {
+                "chbxSVObservationsPestsOrDiseases": false,
+                "dsbSVObservationsPestsOrDiseasesWeighting": 3,
+                "lblSVObservationsPestsOrDiseasesPoints": 0,
+                "sbSVObservationsPestsOrDiseasesObservations": 0
+            },
+            "Weeds": {
+                "chbxSVObservationsWeeds": false,
+                "dsbSVObservationsWeedsWeighting": 0,
+                "lblSVObservationsWeedsPoints": 0,
+                "sbSVObservationsWeedsObservations": 0
+            },
+            "lblOverallPtsSVObservations": 0
+        },
+        "Soil": {
+            "NFluxBottomRoot": {
+                "chbxSVSoilNFluxBottomRoot": false,
+                "dsbSVSoilNFluxBottomRootReplicates": 0,
+                "dsbSVSoilNFluxBottomRootWeighting": 2,
+                "lblSVSoilNFluxBottomRootPoints": 0,
+                "sbSVSoilNFluxBottomRootObservations": 0
+            },
+            "NMin": {
+                "chbxSVSoilNMin": false,
+                "dsbSVSoilNMinLayers": 4,
+                "dsbSVSoilNMinReplicates": 3,
+                "dsbSVSoilNMinWeighting": 3,
+                "lblSVSoilNMinPoints": 4.5,
+                "sbSVSoilNMinObservations": 9
+            },
+            "PressureHeads": {
+                "chbxSVSoilPressureHeads": false,
+                "dsbSVSoilPressureHeadsLayers": 0,
+                "dsbSVSoilPressureHeadsReplicates": 3,
+                "dsbSVSoilPressureHeadsWeighting": 2,
+                "lblSVSoilPressureHeadsPoints": 0,
+                "sbSVSoilPressureHeadsObservations": 0
+            },
+            "SoilWaterGrav": {
+                "chbxSVSoilSoilWaterGrav": false,
+                "dsbSVSoilSoilWaterGravLayers": 4,
+                "dsbSVSoilSoilWaterGravReplicates": 3,
+                "dsbSVSoilSoilWaterGravWeighting": 3,
+                "lblSVSoilSoilWaterGravPoints": 4.5,
+                "sbSVSoilSoilWaterGravObservations": 9
+            },
+            "SoilWaterSensorCal": {
+                "chbxSVSoilSoilWaterSensorCal": false,
+                "dsbSVSoilSoilWaterSensorCalLayers": 0,
+                "dsbSVSoilSoilWaterSensorCalReplicates": 3,
+                "dsbSVSoilSoilWaterSensorCalWeighting": 3,
+                "lblSVSoilSoilWaterSensorCalPoints": 0,
+                "sbSVSoilSoilWaterSensorCalObservations": 0
+            },
+            "WaterFluxBottomRoot": {
+                "chbxSVSoilWaterFluxBottomRoot": false,
+                "dsbSVSoilWaterFluxBottomRootReplicates": 0,
+                "dsbSVSoilWaterFluxBottomRootWeighting": 2,
+                "lblSVSoilWaterFluxBottomRootPoints": 0,
+                "sbSVSoilWaterFluxBottomRootObservations": 0
+            },
+            "lblOverallPtsSVSoil": 9
+        },
+        "SurfaceFluxes": {
+            "CH4Loss": {
+                "chbxSVSurfaceFluxesCH4Loss": false,
+                "dsbSVSurfaceFluxesCH4LossWeighting": 2,
+                "lblSVSurfaceFluxesCH4LossPoints": 0,
+                "sbSVSurfaceFluxesCH4LossObservations": 0
+            },
+            "CO2Loss": {
+                "chbxSVSurfaceFluxesCO2Loss": false,
+                "dsbSVSurfaceFluxesCO2LossWeighting": 0,
+                "lblSVSurfaceFluxesCO2LossPoints": 0,
+                "sbSVSurfaceFluxesCO2LossObservations": 0
+            },
+            "Et": {
+                "chbxSVSurfaceFluxesEt": false,
+                "dsbSVSurfaceFluxesEtWeighting": 3,
+                "lblSVSurfaceFluxesEtPoints": 0,
+                "sbSVSurfaceFluxesEtObservations": 0
+            },
+            "N2Loss": {
+                "chbxSVSurfaceFluxesN2Loss": false,
+                "dsbSVSurfaceFluxesN2LossWeighting": 2,
+                "lblSVSurfaceFluxesN2LossPoints": 0,
+                "sbSVSurfaceFluxesN2LossObservations": 0
+            },
+            "N2OLoss": {
+                "chbxSVSurfaceFluxesN2OLoss": false,
+                "dsbSVSurfaceFluxesN2OLossWeighting": 2,
+                "lblSVSurfaceFluxesN2OLossPoints": 0,
+                "sbSVSurfaceFluxesN2OLossObservations": 0
+            },
+            "NH3Loss": {
+                "chbxSVSurfaceFluxesNH3Loss": false,
+                "dsbSVSurfaceFluxesNH3LossWeighting": 2,
+                "lblSVSurfaceFluxesNH3LossPoints": 0,
+                "sbSVSurfaceFluxesNH3LossObservations": 0
+            },
+            "NOLoss": {
+                "chbxSVSurfaceFluxesNOLoss": false,
+                "dsbSVSurfaceFluxesNOLossWeighting": 0,
+                "lblSVSurfaceFluxesNOLossPoints": 0,
+                "sbSVSurfaceFluxesNOLossObservations": 0
+            },
+            "lblOverallPtsSVSurfaceFluxes": 0
+        },
+        "lblOverallPtsSV": 32.899999999999999,
+        "lblRankingSV": "Gold"
+    },
+    "Weather": {
+        "GlobalRadiation": {
+            "chbxGlobalRadiationWeather": true,
+            "dsbGlobalRadiationKmWeather": 0.5,
+            "dsbGlobalRadiationWeightWeather": 5,
+            "lblGlobalRadiationPtsWeather": 5,
+            "rbGlobalRadiationWeatherMeasured": true,
+            "sbGlobalRadiationAltDifWeather": 0,
+            "sbGlobalRadiationOptimalDistanceWeather": 20
+        },
+        "LeafWetness": {
+            "chbxLeafWetnessWeather": false,
+            "dsbLeafWetnessWeightWeather": 1,
+            "lblLeafWetnessPtsWeather": 0,
+            "rbLeafWetnessWeatherMeasured": false
+        },
+        "Precipitation": {
+            "chbxPrecipitationWeather": true,
+            "dsbPrecipitationKmWeather": 0.5,
+            "dsbPrecipitationWeightWeather": 5,
+            "lblPrecipitationPtsWeather": 5,
+            "rbPrecipitationWeatherMeasured": true,
+            "sbPrecipitationAltDifWeather": 0,
+            "sbPrecipitationOptimalDistanceWeather": 1
+        },
+        "RelHumidity": {
+            "chbxRelHumidityWeather": true,
+            "dsbRelHumidityKmWeather": 0.5,
+            "dsbRelHumidityWeightWeather": 4,
+            "lblRelHumidityPtsWeather": 4,
+            "rbRelHumidityWeatherMeasured": true,
+            "sbRelHumidityAltDifWeather": 0,
+            "sbRelHumidityOptimalDistanceWeather": 5
+        },
+        "SoilTemp": {
+            "chbxSoilTempWeather": false,
+            "dsbSoilTempWeightWeather": 2,
+            "lblSoilTempPtsWeather": 2,
+            "rbSoilTempWeatherMeasured": true
+        },
+        "SunshineHours": {
+            "AltDif": 0,
+            "chbxSunshineHoursWeather": false,
+            "dsbSunshineHoursKmWeather": 0,
+            "dsbSunshineHoursWeightWeather": 3,
+            "lblSunshineHoursPtsWeather": 0,
+            "rbSunshineHoursWeatherMeasured": false,
+            "sbSunshineHoursOptimalDistanceWeather": 20
+        },
+        "TAve": {
+            "chbxTAveWeather": false,
+            "dsbTAveKmWeather": 0.5,
+            "dsbTAveWeightWeather": 3,
+            "lblTAvePtsWeather": 3,
+            "rbTAveWeatherMeasured": true,
+            "sbTAveAltDifWeather": 0,
+            "sbTAveOptimalDistanceWeather": 5
+        },
+        "TMax": {
+            "chbxTMaxWeather": true,
+            "dsbTMaxKmWeather": 0.5,
+            "dsbTMaxWeightWeather": 5,
+            "lblTMaxPtsWeather": 5,
+            "rbTMaxWeatherMeasured": true,
+            "sbTMaxAltDifWeather": 0,
+            "sbTMaxOptimalDistanceWeather": 5
+        },
+        "TMin": {
+            "chbxTMinWeather": true,
+            "dsbTMinKmWeather": 0.5,
+            "dsbTMinWeightWeather": 5,
+            "lblTMinPtsWeather": 5,
+            "rbTMinWeatherMeasured": true,
+            "sbTMinAltDifWeather": 0,
+            "sbTMinOptimalDistanceWeather": 5
+        },
+        "WindSpeed": {
+            "chbxWindSpeedWeather": true,
+            "dsbWindSpeedKmWeather": 0.5,
+            "dsbWindSpeedWeightWeather": 3,
+            "lblWindSpeedPtsWeather": 3,
+            "rbWindSpeedWeatherMeasured": true,
+            "sbWindSpeedAltDifWeather": 0,
+            "sbWindSpeedOptimalDistanceWeather": 10
+        },
+        "lblOverallPtsWeather": 32,
+        "lblRankingWeather": "Gold",
+        "txbrWeather": "Weather data from weather station (run by German weather service, DWD) at the field experimental site\nsoil temperature given for 5, 20 and 50 cm depth\nrelative air humidity given as a mean over the day and as actual value of 2 pm\n"
+    },
+    "objectType": "objects.entry"
+}

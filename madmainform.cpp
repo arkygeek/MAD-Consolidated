@@ -124,7 +124,7 @@ void MadMainForm::on_treewModules_itemSelectionChanged() // top level selection 
       // display sub-items for datasets module
       ui->stackedWidgetSubItems->setCurrentIndex(1);
       // populate known items
-      myList << "Dataset 1" << "Dataset 2" << "Dataset 3";
+      myList << "Blank" << "Muncheberg";
 
       mpQStringListModel->setStringList(myList);
     }
@@ -134,7 +134,7 @@ void MadMainForm::on_treewModules_itemSelectionChanged() // top level selection 
       // display sub-items for ranking module
       ui->stackedWidgetSubItems->setCurrentIndex(5);
       // populate known items
-      myList << "Ranked Dataset 1" << "Ranked Dataset 2" << "Ranked Dataset 3";
+      myList << "Blank" << "Muncheberg (Gold-CK)";
 
       mpQStringListModel->setStringList(myList);
     }
@@ -6760,15 +6760,16 @@ void MadMainForm::on_pbLoadDR_clicked()
   // TODO check to see if Enginio has anything built in to do this kind of thing
 
   //
+  QJsonDocument myJsonDocument = openDRJsonFile();
 
-  setFormDRFromJson();
+  setFormDRFromJson(myJsonDocument);
 
 }
 
-void MadMainForm::setFormDRFromJson()
+void MadMainForm::setFormDRFromJson(QJsonDocument theJsonDocument)
 {
   // this is going to be a large function
-  QJsonDocument myJsonDocument = openDRJsonFile();
+  //QJsonDocument myJsonDocument = openDRJsonFile();
   /* WHEW! Got it figured out finally.
    * This is how the parsing works:
    *
@@ -6800,7 +6801,7 @@ void MadMainForm::setFormDRFromJson()
    *
    */
 
-  QJsonObject myRootObject = myJsonDocument.object();
+  QJsonObject myRootObject = theJsonDocument.object();
 
   QJsonValue myValHeader = myRootObject.value("Header");
   QJsonObject myObjHeader = myValHeader.toObject();
@@ -8938,6 +8939,7 @@ void MadMainForm::saveJsonToFileDR(QJsonDocument theQJsonDocument)
     //qDebug() << "file saved successfully";
   }
 }
+
 QJsonDocument MadMainForm::openDRJsonFile()
 {
 QString myFileName = QFileDialog::getOpenFileName(this, tr("Open File"),
@@ -8990,3 +8992,48 @@ QString MadMainForm::generateCitationDR(QString theText)
   return theText;
 }
 
+
+void MadMainForm::on_listView_clicked(const QModelIndex &index)
+{
+  // load the item that was clicked
+  // for now :
+  // index 0 is blank
+  // index 1 is Muncheberg
+
+  //QJsonDocument myJsonDocument = openDRJsonFile();
+  //QByteArray myJsonByteArray = QFile":/datasetformfiles/Muncheberg.txt";
+  QString myFileName;
+
+  if (index.row() == 1)
+    {
+      myFileName = ":/datasetformfiles/muncheberg.txt";
+    }
+  else if (index.row() == 0)
+    {
+      myFileName = ":/datasetformfiles/blankDataRanking.txt";
+}
+
+  QFile myFile(myFileName);
+  if (!myFile.open(QIODevice::ReadOnly | QIODevice::Text))
+  {
+      //qDebug() << "File open error:" << myFile.errorString();
+      //return 1;
+  }
+
+  QByteArray myJsonByteArray = myFile.readAll();
+
+  myFile.close();
+
+  QJsonParseError myJsonParseError;
+  QJsonDocument myJsonDocument = QJsonDocument::fromJson(myJsonByteArray, &myJsonParseError);
+  if (myJsonParseError.error != QJsonParseError::NoError)
+  {
+      //qDebug() << "Error happened:" << myJsonParseError.errorString();
+  }
+  setFormDRFromJson(myJsonDocument);
+  //return myJsonDocument;
+
+
+
+  setFormDRFromJson(myJsonDocument);
+}

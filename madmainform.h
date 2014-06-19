@@ -559,6 +559,8 @@ private slots:
     void on_pbSyncDR_clicked();
     void on_pbSaveDR_clicked();
     void on_pbLoadDR_clicked();
+    void on_listView_clicked(const QModelIndex &index);
+
 private:
     Ui::MadMainForm *ui;
     QStringListModel *mpQStringListModel;
@@ -679,7 +681,7 @@ private:
       QPair<double, double> calculateMultiplier();
       QPair<bool, double> calculatePointsStateVars();
 
-      void setFormDRFromJson();
+      void setFormDRFromJson(QJsonDocument theJsonDocument);
       void setFormDRExample(QString theExample);
       QJsonDocument openDRJsonFile();
 
