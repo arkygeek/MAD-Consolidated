@@ -245,6 +245,20 @@
           </property>
          </item>
         </item>
+        <item>
+         <property name="text">
+          <string>Aarhus</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources/ResourceFiles.qrc">
+           <normaloff>:/icons/datasets/register.png</normaloff>:/icons/datasets/register.png</iconset>
+         </property>
+        </item>
        </widget>
        <widget class="QListView" name="listView"/>
        <widget class="QStackedWidget" name="stackedWidgetSubItems">
@@ -849,7 +863,7 @@
         <number>0</number>
        </property>
        <property name="currentIndex">
-        <number>5</number>
+        <number>8</number>
        </property>
        <widget class="QWidget" name="pageMainBlank"/>
        <widget class="QWidget" name="pageData">
@@ -27618,6 +27632,19 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </widget>
+       <widget class="QWidget" name="pageAarhus">
+        <layout class="QGridLayout" name="gridLayout_129">
+         <item row="0" column="0">
+          <widget class="QWebView" name="webView">
+           <property name="url">
+            <url>
+             <string>http://sinks.djfgeo.dk:8080/geonetwork/apps/tabsearch/</string>
+            </url>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </widget>
      </widget>
     </item>
@@ -27644,6 +27671,13 @@ p, li { white-space: pre-wrap; }
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="Resources/ResourceFiles.qrc"/>
  </resources>

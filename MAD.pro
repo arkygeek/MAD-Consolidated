@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui enginio
+QT       += core gui enginio webkitwidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 qtHaveModule(printsupport): QT += printsupport

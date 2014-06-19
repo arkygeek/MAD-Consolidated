@@ -187,6 +187,16 @@ void MadMainForm::on_treewModules_itemSelectionChanged() // top level selection 
 
       mpQStringListModel->setStringList(myList);
     }
+  else if (ui->treewModules->currentItem()->text(0)=="Aarhus") // Module: Aarhus (Catalog)
+    {
+      ui->stackedWidgetMainArea->setCurrentIndex(8);
+      // display sub-items for scenarios catalog module
+      ui->stackedWidgetSubItems->setCurrentIndex(0);
+      // populate known items
+      myList << "Page 1" << "Page 2" << "Page 3";
+
+      mpQStringListModel->setStringList(myList);
+    }
 }
 
 void MadMainForm::on_treeWidgetDataset_itemSelectionChanged()
