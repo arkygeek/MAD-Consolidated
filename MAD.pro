@@ -31,7 +31,8 @@ SOURCES += main.cpp\
     maddatasetinitialvalues.cpp \
     maddatasetsoil.cpp \
     maddatasetsite.cpp \
-    maddatasetweather.cpp
+    maddatasetweather.cpp \
+    maddatasetsvcrop.cpp
 
 HEADERS  += madmainform.h \
     madguid.h \
@@ -51,7 +52,8 @@ HEADERS  += madmainform.h \
     maddatasetinitialvalues.h \
     maddatasetsoil.h \
     maddatasetsite.h \
-    maddatasetweather.h
+    maddatasetweather.h \
+    maddatasetsvcrop.h
 
 FORMS    += madmainformbase.ui
 
